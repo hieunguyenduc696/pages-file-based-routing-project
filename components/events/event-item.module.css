@@ -59,6 +59,10 @@
   margin-right: 10px;
 }
 
+.bottom span {
+  margin-right: 5px;
+}
+
 @media screen and (max-width: 767.98px) {
   .item {
     height: unset;
