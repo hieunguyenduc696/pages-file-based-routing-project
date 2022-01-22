@@ -18,7 +18,7 @@ const EventItem = (props) => {
 
   return (
     <li className={styles.item}>
-      <img src={props.image} />
+      <img src={"/" + props.image} alt={props.title} />
       <div className={styles.content}>
         <div className={styles.top}>
           <h1>{props.title}</h1>
@@ -34,8 +34,10 @@ const EventItem = (props) => {
         </div>
         <div className={styles.bottom}>
           <Button link={exploreLink}>
-            <span>Explore Event</span>
-            <ArrowRightIcon />
+            <div className={styles.exploreWrapper}>
+              <span>Explore Event</span>
+              <ArrowRightIcon />
+            </div>
           </Button>
         </div>
       </div>
